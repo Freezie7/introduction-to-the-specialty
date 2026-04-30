@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIE AI — Генерация изображения</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>KIE AI Image Generator</h1>
+      <p class="hint">Введите промпт, нажмите кнопку, дождитесь результата.</p>
+
+      <label for="promptInput" class="label">Промпт</label>
+      <textarea
+        id="promptInput"
+        rows="8"
+        placeholder="Например: a luxury editorial portrait, minimalistic background, cinematic light..."
+      ></textarea>
+
+      <button id="generateBtn">Сгенерировать картинку</button>
+
+      <div id="status" class="status">Ожидание...</div>
+
+      <section id="result" class="result hidden">
+        <a id="openLink" target="_blank" rel="noopener">Открыть оригинал</a>
+        <img id="preview" alt="Generated image" />
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
