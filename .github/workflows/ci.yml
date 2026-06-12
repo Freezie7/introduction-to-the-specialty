@@ -18,3 +18,11 @@ jobs:
       - run: npm install
       - run: npx eslint server.js
       - run: npm test
+
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: returntocorp/semgrep-action@v1
+        with:
+          config: p/javascript
