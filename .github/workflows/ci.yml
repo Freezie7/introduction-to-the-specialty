@@ -17,3 +17,4 @@ jobs:
           node-version: '20'
       - run: npm install
       - run: npx eslint server.js
+      - run: npm test
